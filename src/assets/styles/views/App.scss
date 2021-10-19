@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-size: $font-size-normal;
 }
 
 .App-logo {
@@ -20,12 +21,34 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: $font-size-large;
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.App-icons {
+  display: flex;
+  margin: 0 2rem;
+  * {
+    margin: 0 2rem;
+  }
+}
+
+.button-app {
+  margin-top: 2rem !important;
+  font-size: 1.4rem !important;
+  min-width: 20rem !important;
+  min-height: 4rem;
+}
+
+.code-app {
+  transition: all 0.2s;
+  &:hover {
+    font-size: 3rem;
+  }
 }
 
 @keyframes App-logo-spin {
